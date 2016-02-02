@@ -4,7 +4,7 @@ public class Main {
 	public static void main(String[] args) {
 		VorThread vt = new VorThread();
 		vt.start();
-		int u =6;
+		int u =9;
 	}
 
 }
