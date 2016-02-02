@@ -5,6 +5,7 @@ public class Main {
 		VorThread vt = new VorThread();
 		vt.start();
 		int x =9;
+		System.out.println(x);
 	}
 
 }
