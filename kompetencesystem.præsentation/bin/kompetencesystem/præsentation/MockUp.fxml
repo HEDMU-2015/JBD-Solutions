@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane fx:id="viewGrid" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1080.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="kompetencesystem.præsentation.Gui">
+  <columnConstraints>
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="546.0" minWidth="10.0" prefWidth="361.0" />
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="734.0" minWidth="10.0" prefWidth="733.0" />
+  </columnConstraints>
+  <rowConstraints>
+      <RowConstraints maxHeight="267.0" minHeight="10.0" prefHeight="130.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="267.0" minHeight="10.0" prefHeight="130.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="267.0" minHeight="10.0" prefHeight="130.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="267.0" minHeight="10.0" prefHeight="130.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <VBox prefHeight="200.0" prefWidth="100.0">
+         <children>
+          <TitledPane text="Afdeling">
+               <content>
+              <AnchorPane prefHeight="200.0">
+                     <children>
+                        <Group fx:id="afdeling">
+                           <children>
+                              <CheckBox fx:id="checkboxDanmark" layoutX="14.0" layoutY="20.0" mnemonicParsing="false" onAction="#marker" text="Danmark" />
+                              <CheckBox fx:id="checkboxSverige" layoutX="14.0" layoutY="50.0" mnemonicParsing="false" onAction="#marker" text="Sverige" />
+                              <CheckBox fx:id="checkboxNorge" layoutX="14.0" layoutY="80.0" mnemonicParsing="false" onAction="#marker" text="Norge" />
+                           </children>
+                        </Group>
+                     </children>
+                  </AnchorPane>
+               </content>
+          </TitledPane>
+         </children>
+      </VBox>
+      <TableView fx:id="TableView" GridPane.columnIndex="1" GridPane.rowSpan="4">
+        <columns>
+          <TableColumn fx:id="viewNavn" minWidth="300.0" prefWidth="300.0" text="Navn" />
+          <TableColumn fx:id="viewEmail" minWidth="250.0" prefWidth="250.0" text="E-mail" />
+            <TableColumn fx:id="viewAfdeling" minWidth="200.0" prefWidth="200.0" text="Afdeling" />
+        </columns>
+      </TableView>
+      <VBox prefHeight="200.0" prefWidth="100.0" GridPane.rowIndex="1">
+         <children>
+          <TitledPane prefHeight="286.0" prefWidth="300.0" text="Design">
+               <content>
+                  <AnchorPane prefHeight="200.0">
+                     <children>
+                        <Group fx:id="design" layoutY="-7.0">
+                           <children>
+                              <CheckBox fx:id="checkbox9" layoutX="14.0" layoutY="20.0" mnemonicParsing="false" onAction="#marker" text="KlasseDiagram" />
+                              <CheckBox fx:id="checkbox10" layoutX="14.0" layoutY="50.0" mnemonicParsing="false" onAction="#marker" text="DatabaseModel" />
+                              <CheckBox fx:id="checkbox11" layoutX="14.0" layoutY="110.0" mnemonicParsing="false" onAction="#marker" text="SekvensDiagram" />
+                              <CheckBox fx:id="checkbox12" layoutX="14.0" layoutY="80.0" mnemonicParsing="false" onAction="#marker" text="MockUps" />
+                           </children>
+                        </Group>
+                     </children>
+                  </AnchorPane>
+               </content>
+          </TitledPane>
+         </children>
+      </VBox>
+      <VBox prefHeight="200.0" prefWidth="100.0" GridPane.rowIndex="2">
+         <children>
+            <TitledPane prefHeight="513.0" prefWidth="384.0" text="Programmering">
+               <content>
+                  <AnchorPane prefHeight="200.0">
+                     <children>
+                        <Group fx:id="programering" layoutX="-14.0" layoutY="-34.0">
+                           <children>
+                              <CheckBox fx:id="checkbox1" layoutX="28.0" layoutY="101.0" mnemonicParsing="false" onAction="#marker" text="C++" />
+                              <CheckBox fx:id="checkbox2" layoutX="28.0" layoutY="131.0" mnemonicParsing="false" onAction="#marker" text="C#" />
+                              <CheckBox fx:id="checkbox8" layoutX="164.0" layoutY="131.0" mnemonicParsing="false" onAction="#marker" text="JavaScript" />
+                              <CheckBox fx:id="checkbox6" layoutX="164.0" layoutY="101.0" mnemonicParsing="false" onAction="#marker" text="Visual Basic.NET" />
+                              <CheckBox fx:id="checkbox4" layoutX="164.0" layoutY="41.0" mnemonicParsing="false" onAction="#marker" text="Python" />
+                              <CheckBox fx:id="checkbox7" layoutX="164.0" layoutY="71.0" mnemonicParsing="false" onAction="#marker" text="PHP" />
+                              <CheckBox fx:id="checkbox3" layoutX="28.0" layoutY="41.0" mnemonicParsing="false" onAction="#marker" text="Java" />
+                              <CheckBox fx:id="checkbox5" layoutX="28.0" layoutY="71.0" mnemonicParsing="false" onAction="#marker" text="C" />
+                           </children>
+                        </Group>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </TitledPane>
+         </children>
+      </VBox>
+      <VBox prefHeight="200.0" prefWidth="100.0" GridPane.rowIndex="3">
+         <children>
+          <TitledPane text="Analyse">
+               <content>
+              <AnchorPane prefHeight="200.0">
+                     <children>
+                        <Group fx:id="analyse">
+                           <children>
+                              <CheckBox fx:id="checkbox13" layoutX="14.0" layoutY="20.0" mnemonicParsing="false" onAction="#marker" text="UseCase" />
+                              <CheckBox fx:id="checkboxDomaeneModel" layoutX="14.0" layoutY="110.0" mnemonicParsing="false" onAction="#marker" text="DomæneModel" />
+                              <CheckBox fx:id="checkboxOperationsKontrakter" layoutX="14.0" layoutY="50.0" mnemonicParsing="false" onAction="#marker" text="OperationKontrakter" />
+                              <CheckBox fx:id="checkboxSystemSekvensDiagram" layoutX="14.0" layoutY="80.0" mnemonicParsing="false" onAction="#marker" text="SystemSekvensDiagram" />
+                           </children>
+                        </Group>
+                     </children>
+                  </AnchorPane>
+               </content>
+          </TitledPane>
+         </children>
+      </VBox>
+   </children>
+   <effect>
+      <DropShadow />
+   </effect>
+</GridPane>
