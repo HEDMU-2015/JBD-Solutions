@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="C:/Users/denieru/eclipse/java-mars/eclipse/configuration/org.eclipse.osgi/1059/0/.cp/lib/hsqldb.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
